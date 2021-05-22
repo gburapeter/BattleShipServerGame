@@ -1,0 +1,44 @@
+package ghipe1.Utils;
+
+/**
+ * Tartalmazza a játékban használt Commandokat, amellyel komunikál
+ * a szerver a klienssel
+ */
+
+public enum Command {
+    LOGIN,
+    LOGIN_SUCCEED,
+    NAMES_UPDATE,
+    SHIPS_UPDATE,
+    CREATE_GAME,
+    JOIN_TO_GAME,
+    JOINED,
+    OPPONENT_JOINED,
+    JOIN_TO_GAME_FAILED,
+    GAME_CREATED,
+    GAME_CREATED_ERROR,
+    GAME_REMOVED,
+    GAME_DELETED_UPDATE,
+    REMOVE_GAME_FROM_LIST,
+    YOUR_NOT_THE_HOST_OF_THIS_GAME,
+    AVAILABLE_GAME,
+    SHOT_HIT,
+    SHOT_MISSED,
+    OPPONENT_HIT_YOU,
+    START_SHIP_PLACING,
+    PLACE_A_SHIP,
+    PLACEMENT_SUCCEED,
+    PLACEMENT_FAILED,
+    ALL_SHIPS_PLACED,
+    START_SHOOTING,
+    SHOOTING_TURN_UPDATE,
+    SHOOT,
+    WAIT_FOR_OPPONENT,
+    YOUR_TURN,
+    INITIAL_TURN_MSG,
+    INITIAL_NOT_YOUR_TURN_MSG,
+    NOT_YOUR_TURN,
+    YOU_WIN,
+    YOU_LOSE,
+
+}

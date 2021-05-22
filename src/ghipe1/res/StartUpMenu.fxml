@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ghipe1.Client.Controller.StartUpMenuController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="Img1" fitHeight="224.0" fitWidth="551.0">
+                     <image>
+                        <Image url="@background.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="540.0" spacing="70.0">
+               <children>
+                  <TextField fx:id="nickField" promptText="Nickname">
+                     <tooltip>
+                        <Tooltip text="Enter your nick" />
+                     </tooltip></TextField>
+                  <Button fx:id="cncBtn" alignment="BOTTOM_CENTER" layoutX="50.0" layoutY="60.0" mnemonicParsing="false" onAction="#loadClientMenu" prefHeight="31.0" prefWidth="101.0" text="Connect" HBox.hgrow="NEVER">
+                     <effect>
+                        <Lighting bumpInput="$null">
+                           <light>
+                              <Light.Distant color="#97f8aa" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" top="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="portField" promptText="Port">
+                     <tooltip>
+                        <Tooltip fx:id="tt1" anchorLocation="CONTENT_TOP_RIGHT" contentDisplay="RIGHT" text="Enter the port" textAlignment="RIGHT" />
+                     </tooltip></TextField>
+                  <Button fx:id="exitBtn" mnemonicParsing="false" text="EXIT" textAlignment="CENTER" textFill="#030e1c" wrapText="true">
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
